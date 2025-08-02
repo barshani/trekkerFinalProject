@@ -1,13 +1,13 @@
 import React from 'react';
 
-interface TripCardProps {
+interface CountryCardProps {
   title: string;
   description: string;
   imageUrl: string;
   onClick?: () => void;
 }
 
-function CountryCard({ title, description, imageUrl, onClick }: TripCardProps) {
+function CityCard({ title, description, imageUrl, onClick }: CountryCardProps) {
   return (
     <div
       className="card h-100 shadow-sm"
@@ -23,4 +23,4 @@ function CountryCard({ title, description, imageUrl, onClick }: TripCardProps) {
   );
 }
 
-export default CountryCard;
+export default CityCard;

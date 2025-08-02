@@ -1,13 +1,37 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import AttractionModal from './AttractionModal';
+import { useParams } from 'react-router-dom';
 interface AttractionCardProps {
-  name: string;
+   name: string;
   description: string;
   imageUrl: string;
+  mapUrl?: string;
+  details?: string;
+  openingHours?: string;
+  onAdd: Function;
 }
+function isAttractionInDay(name: string, day: number): boolean {
+  const stored = localStorage.getItem("tripPlan");
 
-function AttractionCard({ name, description, imageUrl }: AttractionCardProps) {
+  if (!stored) return false;
+
+  try {
+    const plan: string[][] = JSON.parse(stored);
+    return plan[day]?.includes(name) || false;
+  } catch (e) {
+    console.error("Invalid JSON in tripPlan", e);
+    return false;
+  }
+}
+function AttractionCard({ name, description, imageUrl,details, mapUrl,openingHours,onAdd }: AttractionCardProps) {
+  const [showModal, setShowModal] = useState(false);
+  const [added, setAdded] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
+  const {day} = useParams<{day:string}>()
   return (
+    <>
     <div className="card h-100 shadow-sm">
       <a href={imageUrl} target="_blank" rel="noreferrer">
         <img src={`${imageUrl}&imgsz=large`} className="card-img-top" alt={name} />
@@ -16,7 +40,32 @@ function AttractionCard({ name, description, imageUrl }: AttractionCardProps) {
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
       </div>
+      <Button variant="info" onClick={() => setShowModal(true)}>
+        View Attraction
+      </Button>
+      <Button
+        variant="success"
+        disabled={isAttractionInDay(name,Number(day))}
+        onClick={() => {
+          onAdd(name, day);        
+          setAdded(true);          
+          setShowToast(true);      
+          setTimeout(() => setShowToast(false), 2000); 
+        }}
+      >
+        {isAttractionInDay(name,Number(day)) ? "Added" : "Add"}
+      </Button>
     </div>
+    <AttractionModal
+        show={showModal}
+        onClose={() => setShowModal(false)}
+        name={name}
+        description={description}
+        details={details}
+        openingHours={openingHours}
+        mapUrl={mapUrl}
+      />
+      </>
   );
 }
 

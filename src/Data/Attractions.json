@@ -3,81 +3,69 @@
     {
       "name": "Parque del Retiro",
       "description": "One of Madrid’s largest parks featuring gardens, boating lake and the iconic Crystal Palace.",
-      "imageUrl": "https://www.google.com/search?q=Parque+del+Retiro+Madrid&tbm=isch"
+      "details": "Located in the heart of Madrid, Retiro Park offers over 125 hectares of peace and culture, featuring fountains, statues, exhibitions and a rowing lake.",
+      "openingHours": "Daily: 6:00 - 22:00",
+      "imageUrl": "https://www.google.com/search?q=Parque+del+Retiro+Madrid&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid"
+      
     },
     {
       "name": "Museo del Prado",
       "description": "World‑renowned art museum housing masterpieces by Goya, Velázquez and El Greco.",
-      "imageUrl": "https://www.google.com/search?q=Museo+del+Prado+Madrid&tbm=isch"
+      "details": "The Prado Museum contains one of the finest collections of European art, dating from the 12th century to the early 20th century.",
+      "openingHours": "Mon-Sat: 10:00 - 20:00, Sun: 10:00 - 19:00",
+      "imageUrl": "https://www.google.com/search?q=Museo+del+Prado+Madrid&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+del+Prado+Madrid"
+      
     },
     {
       "name": "Plaza Mayor",
       "description": "Historic grand square from the 17th century, surrounded by arcades and cafes.",
-      "imageUrl": "https://www.google.com/search?q=Plaza+Mayor+Madrid&tbm=isch"
-    },
-    {
-      "name": "Puerta del Sol",
-      "description": "Central city hub and meeting point, home to the Kilometre Zero marker.",
-      "imageUrl": "https://www.google.com/search?q=Puerta+del+Sol+Madrid&tbm=isch"
-    },
-    {
-      "name": "Royal Palace of Madrid",
-      "description": "The official royal residence, open to the public with grandiose architecture.",
-      "imageUrl": "https://www.google.com/search?q=Royal+Palace+Madrid&tbm=isch"
+      "details": "A central plaza in Madrid, the Plaza Mayor is known for its symmetrical architecture and vibrant atmosphere.",
+      "openingHours": "Open 24 hours",
+      "imageUrl": "https://www.google.com/search?q=Plaza+Mayor+Madrid&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+Madrid"
+      
     }
   ],
   "barcelona": [
     {
       "name": "Sagrada Família",
-      "description": "Antoni Gaudí’s masterpiece – a still-unfinished basilica with stunning architecture.",
-      "imageUrl": "https://www.google.com/search?q=Sagrada+Familia+Barcelona&tbm=isch"
+      "description": "Antoni Gaudí’s masterpiece – a still‑unfinished basilica with stunning architecture.",
+      "details": "An iconic symbol of Barcelona, the basilica is renowned for its elaborate facades and unique design blending Gothic and Art Nouveau forms.",
+      "openingHours": "Mon-Sun: 9:00 - 20:00",
+      "imageUrl": "https://www.google.com/search?q=Sagrada+Familia+Barcelona&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+      
     },
     {
       "name": "Park Güell",
-      "description": "Colorful park with Gaudí-designed mosaic structures and panoramic views of the city.",
-      "imageUrl": "https://www.google.com/search?q=Park+Guell+Barcelona&tbm=isch"
-    },
-    {
-      "name": "La Rambla",
-      "description": "Famous pedestrian street full of shops, street performers and local flavor.",
-      "imageUrl": "https://www.google.com/search?q=La+Rambla+Barcelona&tbm=isch"
-    },
-    {
-      "name": "Gothic Quarter",
-      "description": "A maze of medieval streets filled with cafes, history and beautiful architecture.",
-      "imageUrl": "https://www.google.com/search?q=Gothic+Quarter+Barcelona&tbm=isch"
-    },
-    {
-      "name": "Casa Batlló",
-      "description": "Whimsical Gaudí-designed building with a dragon-like roof and colorful facade.",
-      "imageUrl": "https://www.google.com/search?q=Casa+Batllo+Barcelona&tbm=isch"
+      "description": "Colorful park with Gaudí‑designed mosaic structures and panoramic views of the city.",
+      "details": "A UNESCO World Heritage Site filled with serpentine benches, colorful tile work, and architectural surprises across its scenic gardens.",
+      "openingHours": "Daily: 9:30 - 19:30",
+      "imageUrl": "https://www.google.com/search?q=Park+Guell+Barcelona&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+Guell+Barcelona"
+      
     }
   ],
   "prague": [
     {
       "name": "Charles Bridge",
       "description": "Iconic historic bridge lined with statues, offering views of Prague Castle.",
-      "imageUrl": "https://www.google.com/search?q=Charles+Bridge+Prague&tbm=isch"
+      "details": "A pedestrian-only bridge from the 14th century featuring 30 baroque-style statues and connecting the Old Town with Prague Castle.",
+      "openingHours": "Open 24 hours",
+      "imageUrl": "https://www.google.com/search?q=Charles+Bridge+Prague&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague"
+      
     },
     {
       "name": "Prague Castle",
       "description": "Largest ancient castle complex in the world, with cathedral, museums and gardens.",
-      "imageUrl": "https://www.google.com/search?q=Prague+Castle&tbm=isch"
-    },
-    {
-      "name": "Old Town Square",
-      "description": "Picturesque square with medieval architecture and the Astronomical Clock.",
-      "imageUrl": "https://www.google.com/search?q=Old+Town+Square+Prague&tbm=isch"
-    },
-    {
-      "name": "Dancing House",
-      "description": "Modern architectural icon nicknamed 'Fred and Ginger', standing out on the riverside.",
-      "imageUrl": "https://www.google.com/search?q=Dancing+House+Prague&tbm=isch"
-    },
-    {
-      "name": "Petrin Hill",
-      "description": "A green escape within the city, offering a tower, mirror maze, and sweeping views.",
-      "imageUrl": "https://www.google.com/search?q=Petrin+Hill+Prague&tbm=isch"
+      "details": "Dating back to the 9th century, Prague Castle is a UNESCO World Heritage Site and home to the Czech president.",
+      "openingHours": "Mon-Sun: 6:00 - 22:00",
+      "imageUrl": "https://www.google.com/search?q=Prague+Castle&tbm=isch",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Castle"
+      
     }
   ]
 }

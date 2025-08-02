@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Madrid",
+    "country": "Spain",
+    "description": "The lively capital of Spain full of art, culture, and energy.",
+    "flagUrl": "https://flagcdn.com/w320/es.png",
+    "imageUrl": "https://source.unsplash.com/400x250/?madrid"
+  },
+  {
+    "name": "Barcelona",
+    "country": "Spain",
+    "description": "Gaudí’s colorful city of beaches and bold architecture.",
+    "flagUrl": "https://flagcdn.com/w320/es.png",
+    "imageUrl": "https://source.unsplash.com/400x250/?barcelona"
+  },
+  {
+    "name": "Prague",
+    "country": "Czech Republic",
+    "description": "A fairytale city filled with bridges, castles and cobblestones.",
+    "flagUrl": "https://flagcdn.com/w320/cz.png",
+    "imageUrl": "https://source.unsplash.com/400x250/?prague"
+  },
+  {
+    "name": "Rome",
+    "country": "Italy",
+    "description": "The Eternal City – rich with ruins, pasta and piazzas.",
+    "flagUrl": "https://flagcdn.com/w320/it.png",
+    "imageUrl": "https://source.unsplash.com/400x250/?rome"
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "description": "City of Light, romance, and world-famous landmarks.",
+    "flagUrl": "https://flagcdn.com/w320/fr.png",
+    "imageUrl": "https://source.unsplash.com/400x250/?paris"
+  }
+]
