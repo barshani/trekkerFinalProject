@@ -1,71 +1,540 @@
 {
   "madrid": [
-    {
-      "name": "Parque del Retiro",
-      "description": "One of Madrid’s largest parks featuring gardens, boating lake and the iconic Crystal Palace.",
-      "details": "Located in the heart of Madrid, Retiro Park offers over 125 hectares of peace and culture, featuring fountains, statues, exhibitions and a rowing lake.",
-      "openingHours": "Daily: 6:00 - 22:00",
-      "imageUrl": "https://www.google.com/search?q=Parque+del+Retiro+Madrid&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid"
-      
-    },
-    {
-      "name": "Museo del Prado",
-      "description": "World‑renowned art museum housing masterpieces by Goya, Velázquez and El Greco.",
-      "details": "The Prado Museum contains one of the finest collections of European art, dating from the 12th century to the early 20th century.",
-      "openingHours": "Mon-Sat: 10:00 - 20:00, Sun: 10:00 - 19:00",
-      "imageUrl": "https://www.google.com/search?q=Museo+del+Prado+Madrid&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+del+Prado+Madrid"
-      
-    },
-    {
-      "name": "Plaza Mayor",
-      "description": "Historic grand square from the 17th century, surrounded by arcades and cafes.",
-      "details": "A central plaza in Madrid, the Plaza Mayor is known for its symmetrical architecture and vibrant atmosphere.",
-      "openingHours": "Open 24 hours",
-      "imageUrl": "https://www.google.com/search?q=Plaza+Mayor+Madrid&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+Madrid"
-      
-    }
+     {
+    "name": "Parque del Retiro",
+    "description": "One of Madrid’s largest parks featuring gardens, boating lake and the iconic Crystal Palace.",
+    "details": "Located in the heart of Madrid, Retiro Park offers over 125 hectares of peace and culture, featuring fountains, statues, exhibitions and a rowing lake.",
+    "openingHours": "Daily: 6:00 - 22:00",
+    "imageUrl": "https://www.google.com/search?q=Parque+del+Retiro+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid"
+  },
+  {
+    "name": "Museo del Prado",
+    "description": "World‑renowned art museum housing masterpieces by Goya, Velázquez and El Greco.",
+    "details": "The Prado Museum contains one of the finest collections of European art, dating from the 12th century to the early 20th century.",
+    "openingHours": "Mon-Sat: 10:00 - 20:00, Sun: 10:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Museo+del+Prado+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+del+Prado+Madrid"
+  },
+  {
+    "name": "Plaza Mayor",
+    "description": "Historic grand square from the 17th century, surrounded by arcades and cafes.",
+    "details": "A central plaza in Madrid, the Plaza Mayor is known for its symmetrical architecture and vibrant atmosphere.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Plaza+Mayor+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+Madrid"
+  },
+  {
+    "name": "Royal Palace of Madrid",
+    "description": "Official residence of the Spanish Royal Family, featuring opulent rooms and stunning gardens.",
+    "details": "The Royal Palace is the largest palace in Western Europe, showcasing a variety of historical artifacts, paintings, and tapestries.",
+    "openingHours": "Mon-Sun: 10:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Royal+Palace+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Royal+Palace+Madrid"
+  },
+  {
+    "name": "Puerta del Sol",
+    "description": "Iconic square at the heart of Madrid, known as the kilometer zero marker for Spanish roads.",
+    "details": "Puerta del Sol is a bustling center of commerce, with historic landmarks and a major transport hub.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Puerta+del+Sol+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Puerta+del+Sol+Madrid"
+  },
+  {
+    "name": "Templo de Debod",
+    "description": "Ancient Egyptian temple relocated to Madrid, offering panoramic views of the city.",
+    "details": "The Templo de Debod is an authentic Egyptian temple dating back to the 2nd century BC, offering visitors a glimpse into Egypt's rich history.",
+    "openingHours": "Mon-Sun: 9:45 - 20:00",
+    "imageUrl": "https://www.google.com/search?q=Templo+de+Debod+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Templo+de+Debod+Madrid"
+  },
+  {
+    "name": "Plaza de Cibeles",
+    "description": "Famous plaza with a monumental fountain, surrounded by grand buildings.",
+    "details": "Plaza de Cibeles is one of Madrid's most recognizable landmarks, home to the Cibeles Fountain, a symbol of the city.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Plaza+de+Cibeles+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+de+Cibeles+Madrid"
+  },
+  {
+    "name": "Museo Nacional Centro de Arte Reina Sofía",
+    "description": "Museum showcasing modern and contemporary art, including Picasso's Guernica.",
+    "details": "The Reina Sofía Museum is one of Spain's top cultural institutions, housing major works of modern art and temporary exhibitions.",
+    "openingHours": "Mon-Sat: 10:00 - 21:00, Sun: 10:00 - 14:30",
+    "imageUrl": "https://www.google.com/search?q=Museo+Reina+Sofia+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Reina+Sofia+Madrid"
+  },
+  {
+    "name": "El Rastro",
+    "description": "Madrid’s most famous open-air flea market, perfect for shopping and exploring.",
+    "details": "Every Sunday, El Rastro offers a vibrant marketplace where visitors can find antiques, clothing, and street food.",
+    "openingHours": "Sun: 9:00 - 15:00",
+    "imageUrl": "https://www.google.com/search?q=El+Rastro+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Rastro+Madrid"
+  },
+  {
+    "name": "Museo Thyssen-Bornemisza",
+    "description": "Art museum featuring a private collection of European paintings, from the Renaissance to modern art.",
+    "details": "Located near the Prado Museum, the Thyssen-Bornemisza offers an extensive collection of over 1,000 works from various periods of art history.",
+    "openingHours": "Mon-Sun: 10:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Museo+Thyssen+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Thyssen+Madrid"
+  },
+  {
+    "name": "Santiago Bernabéu Stadium",
+    "description": "Iconic football stadium home to Real Madrid, offering tours and interactive experiences.",
+    "details": "Santiago Bernabéu is a must-visit for football fans, featuring a museum and access to the stands and locker rooms.",
+    "openingHours": "Mon-Sun: 10:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Santiago+Bernabeu+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santiago+Bernabeu+Madrid"
+  },
+  {
+    "name": "Madrid Rio",
+    "description": "Urban park along the Manzanares River, featuring green spaces, playgrounds, and cycling paths.",
+    "details": "Madrid Rio is a perfect spot for outdoor activities, including walking, cycling, and enjoying nature.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Madrid+Rio+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid+Rio+Madrid"
+  },
+  {
+    "name": "Casa de Campo",
+    "description": "Large park with a zoo, amusement park, and lake, ideal for a family day out.",
+    "details": "Casa de Campo offers ample green space, a large lake for boating, and attractions like the Madrid Amusement Park and Zoo.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Casa+de+Campo+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+de+Campo+Madrid"
+  },
+  {
+    "name": "Gran Vía",
+    "description": "Madrid’s most famous shopping street, lined with theaters, cinemas, and restaurants.",
+    "details": "Gran Vía is a bustling thoroughfare with a variety of shops, restaurants, and entertainment venues.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Gran+Via+Madrid&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gran+Via+Madrid"
+  }
   ],
   "barcelona": [
-    {
-      "name": "Sagrada Família",
-      "description": "Antoni Gaudí’s masterpiece – a still‑unfinished basilica with stunning architecture.",
-      "details": "An iconic symbol of Barcelona, the basilica is renowned for its elaborate facades and unique design blending Gothic and Art Nouveau forms.",
-      "openingHours": "Mon-Sun: 9:00 - 20:00",
-      "imageUrl": "https://www.google.com/search?q=Sagrada+Familia+Barcelona&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
-      
-    },
-    {
-      "name": "Park Güell",
-      "description": "Colorful park with Gaudí‑designed mosaic structures and panoramic views of the city.",
-      "details": "A UNESCO World Heritage Site filled with serpentine benches, colorful tile work, and architectural surprises across its scenic gardens.",
-      "openingHours": "Daily: 9:30 - 19:30",
-      "imageUrl": "https://www.google.com/search?q=Park+Guell+Barcelona&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+Guell+Barcelona"
-      
-    }
+     {
+    "name": "Sagrada Família",
+    "description": "Antoni Gaudí’s masterpiece – a still‑unfinished basilica with stunning architecture.",
+    "details": "An iconic symbol of Barcelona, the basilica is renowned for its elaborate facades and unique design blending Gothic and Art Nouveau forms.",
+    "openingHours": "Mon-Sun: 9:00 - 20:00",
+    "imageUrl": "https://www.google.com/search?q=Sagrada+Familia+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+  },
+  {
+    "name": "Park Güell",
+    "description": "Colorful park with Gaudí‑designed mosaic structures and panoramic views of the city.",
+    "details": "A UNESCO World Heritage Site filled with serpentine benches, colorful tile work, and architectural surprises across its scenic gardens.",
+    "openingHours": "Daily: 9:30 - 19:30",
+    "imageUrl": "https://www.google.com/search?q=Park+Guell+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+Guell+Barcelona"
+  },
+  {
+    "name": "La Rambla",
+    "description": "Famous tree-lined street with shops, restaurants, and lively street performers.",
+    "details": "La Rambla is a bustling promenade that stretches from Plaça de Catalunya to the Christopher Columbus monument, full of life and color.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=La+Rambla+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Rambla+Barcelona"
+  },
+  {
+    "name": "Casa Batlló",
+    "description": "Gaudí-designed modernist building with colorful, wavy architecture and stunning interiors.",
+    "details": "Casa Batlló is a UNESCO World Heritage Site, offering a surreal and imaginative interior that reflects Gaudí's unique vision.",
+    "openingHours": "Mon-Sun: 9:00 - 21:00",
+    "imageUrl": "https://www.google.com/search?q=Casa+Batlló+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+Batlló+Barcelona"
+  },
+  {
+    "name": "La Pedrera (Casa Milà)",
+    "description": "Another of Gaudí’s masterpieces, an apartment building with a unique, undulating stone facade.",
+    "details": "La Pedrera offers an insight into Gaudí’s organic style and features an impressive rooftop with chimneys that resemble sculptures.",
+    "openingHours": "Mon-Sun: 9:00 - 20:30",
+    "imageUrl": "https://www.google.com/search?q=La+Pedrera+Casa+Milà+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Pedrera+Casa+Milà+Barcelona"
+  },
+  {
+    "name": "Barceloneta Beach",
+    "description": "Popular beach offering sun, sand, and a vibrant atmosphere along Barcelona’s coastline.",
+    "details": "Barceloneta Beach is one of the most iconic beaches in Barcelona, with a lively boardwalk, beach bars, and an excellent location near the city center.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Barceloneta+Beach+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barceloneta+Beach+Barcelona"
+  },
+  {
+    "name": "Montjuïc Hill",
+    "description": "Hilltop area featuring museums, gardens, and panoramic views of Barcelona.",
+    "details": "Montjuïc Hill offers a variety of attractions, including the Montjuïc Castle, the Magic Fountain, and several gardens and museums.",
+    "openingHours": "Mon-Sun: 10:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Montjuïc+Hill+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montjuïc+Hill+Barcelona"
+  },
+  {
+    "name": "Magic Fountain of Montjuïc",
+    "description": "Large fountain offering spectacular nightly light and music shows.",
+    "details": "Located at the foot of Montjuïc Hill, the Magic Fountain is a popular attraction where you can experience a colorful light display synchronized to music.",
+    "openingHours": "Fri-Sun: 21:00 - 23:00",
+    "imageUrl": "https://www.google.com/search?q=Magic+Fountain+Montjuïc+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Magic+Fountain+Montjuïc+Barcelona"
+  },
+  {
+    "name": "Palau de la Música Catalana",
+    "description": "A UNESCO World Heritage Site, this concert hall is a masterpiece of Modernist architecture.",
+    "details": "The Palau de la Música Catalana is known for its stunning stained glass, intricate mosaics, and exceptional acoustics.",
+    "openingHours": "Mon-Sun: 10:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Palau+de+la+Música+Catalana+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+de+la+Música+Catalana+Barcelona"
+  },
+  {
+    "name": "Camp Nou",
+    "description": "The famous football stadium and home to FC Barcelona, offering tours of the stadium and museum.",
+    "details": "Camp Nou is one of the largest football stadiums in the world, offering fans a chance to explore the museum and the stadium itself.",
+    "openingHours": "Mon-Sun: 10:00 - 18:30",
+    "imageUrl": "https://www.google.com/search?q=Camp+Nou+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Camp+Nou+Barcelona"
+  },
+  {
+    "name": "Park de la Ciutadella",
+    "description": "Public park featuring a lake, gardens, and several museums.",
+    "details": "Located near the city center, the park is perfect for a peaceful stroll, a boat ride on the lake, or visiting the Barcelona Zoo and the Catalan Parliament.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Park+de+la+Ciutadella+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+de+la+Ciutadella+Barcelona"
+  },
+  {
+    "name": "Tibidabo",
+    "description": "Amusement park with panoramic views of Barcelona from the top of a mountain.",
+    "details": "Tibidabo offers thrilling rides, an old-fashioned amusement park, and a church with sweeping views of the city and coastline.",
+    "openingHours": "Mon-Sun: 11:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Tibidabo+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tibidabo+Barcelona"
+  },
+  {
+    "name": "Palau Güell",
+    "description": "Another Gaudí-designed building, showcasing the unique style and creativity of the architect.",
+    "details": "Palau Güell is a magnificent example of Gaudí’s work, blending Art Nouveau with functional design and rich decoration.",
+    "openingHours": "Mon-Sun: 10:00 - 20:00",
+    "imageUrl": "https://www.google.com/search?q=Palau+Güell+Barcelona&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+Güell+Barcelona"
+  },
+  {
+    "name": "Barcelona Cathedral",
+    "description": "Gothic cathedral in the heart of Barcelona, known for its stunning architecture and impressive façade.",
+    "details": "The Cathedral of Barcelona, also known as the Cathedral of the Holy Cross, is one of the best examples of Gothic architecture in the city.",
+    "openingHours": "Mon-Sat: 8:00 - 19:30, Sun: 8:00 - 13:45",
+    "imageUrl": "https://www.google.com/search?q=Barcelona+Cathedral&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona+Cathedral"
+  }
   ],
   "prague": [
+  {
+    "name": "Charles Bridge",
+    "description": "Iconic historic bridge lined with statues, offering views of Prague Castle.",
+    "details": "A pedestrian-only bridge from the 14th century featuring 30 baroque-style statues and connecting the Old Town with Prague Castle.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Charles+Bridge+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague"
+  },
+  {
+    "name": "Prague Castle",
+    "description": "Largest ancient castle complex in the world, with cathedral, museums and gardens.",
+    "details": "Dating back to the 9th century, Prague Castle is a UNESCO World Heritage Site and home to the Czech president.",
+    "openingHours": "Mon-Sun: 6:00 - 22:00",
+    "imageUrl": "https://www.google.com/search?q=Prague+Castle&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Castle"
+  },
+  {
+    "name": "Old Town Square",
+    "description": "Historic square at the heart of Prague, featuring the Astronomical Clock and colorful buildings.",
+    "details": "A UNESCO World Heritage Site, Old Town Square is surrounded by historic buildings, churches, and cafes, with the iconic Astronomical Clock located on the Town Hall.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Old+Town+Square+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Old+Town+Square+Prague"
+  },
+  {
+    "name": "St. Vitus Cathedral",
+    "description": "Gothic cathedral located within Prague Castle, with beautiful stained glass windows and royal tombs.",
+    "details": "St. Vitus Cathedral is one of the most important landmarks in Prague, housing the tombs of Czech kings and a stunning collection of stained glass windows.",
+    "openingHours": "Mon-Sun: 9:00 - 17:00",
+    "imageUrl": "https://www.google.com/search?q=St.+Vitus+Cathedral+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Vitus+Cathedral+Prague"
+  },
+  {
+    "name": "Wenceslas Square",
+    "description": "Major square in Prague, home to historic landmarks and cultural venues.",
+    "details": "Wenceslas Square is a historic and modern commercial hub in Prague, known for its shops, restaurants, and historic buildings, including the National Museum.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Wenceslas+Square+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wenceslas+Square+Prague"
+  },
+  {
+    "name": "Prague Zoo",
+    "description": "One of the best zoos in Europe, featuring over 4,000 animals from around the world.",
+    "details": "Prague Zoo is located in a scenic area with diverse animal exhibits, including rare species and special enclosures like the Indonesian jungle.",
+    "openingHours": "Mon-Sun: 9:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Prague+Zoo&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Zoo"
+  },
+  {
+    "name": "Petrin Hill",
+    "description": "A park with lush gardens, a funicular railway, and stunning views of Prague.",
+    "details": "Petrin Hill offers a peaceful retreat from the city, with gardens, a mirror maze, and the Petrin Lookout Tower offering panoramic views.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Petrin+Hill+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Petrin+Hill+Prague"
+  },
+  {
+    "name": "John Lennon Wall",
+    "description": "Colorful graffiti wall symbolizing peace and love, inspired by John Lennon and the Beatles.",
+    "details": "The Lennon Wall is a famous site in Prague where messages of peace, love, and revolution are continually painted, reflecting the city's historical journey.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=John+Lennon+Wall+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=John+Lennon+Wall+Prague"
+  },
+  {
+    "name": "Vltava River",
+    "description": "The longest river in the Czech Republic, offering boat rides and scenic views of Prague.",
+    "details": "The Vltava River runs through Prague, providing a picturesque setting for boat tours, bridges, and iconic landmarks like Charles Bridge.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Vltava+River+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vltava+River+Prague"
+  },
+  {
+    "name": "Vyšehrad",
+    "description": "A historic fortress offering views of Prague, with a park, basilica, and cemetery.",
+    "details": "Vyšehrad is a historic fort located above the Vltava River, offering visitors a quiet spot to enjoy gardens, explore the Basilica of St. Peter and Paul, and visit the Vyšehrad Cemetery.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Vyšehrad+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vyšehrad+Prague"
+  },
+  {
+    "name": "Prague Dancing House",
+    "description": "Modern, curvaceous building designed by Frank Gehry, resembling a dancing couple.",
+    "details": "Known as the ‘Dancing House,’ this architectural marvel by Frank Gehry is one of Prague’s most iconic modern buildings.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Prague+Dancing+House&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Dancing+House"
+  },
+  {
+    "name": "National Museum",
+    "description": "Largest museum in the Czech Republic, with a vast collection of natural history, historical artifacts, and art.",
+    "details": "The National Museum houses millions of objects across several disciplines, including geology, archaeology, and art, offering an insight into Czech and world history.",
+    "openingHours": "Mon-Sun: 10:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=National+Museum+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=National+Museum+Prague"
+  },
+  {
+    "name": "Letná Park",
+    "description": "A large park with sweeping views of Prague and the Vltava River, known for its giant metronome.",
+    "details": "Letná Park is a popular destination for locals and tourists alike, offering walking paths, gardens, and a giant metronome where a statue of Stalin once stood.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Letná+Park+Prague&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Letná+Park+Prague"
+  },
+  {
+    "name": "Prague Astronomical Clock",
+    "description": "Famous medieval astronomical clock located in the Old Town Hall, showing time, astronomical data, and zodiac signs.",
+    "details": "The Prague Astronomical Clock is one of the oldest astronomical clocks still operational today, attracting visitors every hour for its hourly show.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Prague+Astronomical+Clock&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock"
+  }
+  ],
+  "rome": [
+      {
+    "name": "Colosseum",
+    "description": "Iconic Roman amphitheater known for gladiator battles and spectacular performances.",
+    "details": "The Colosseum is one of the greatest works of Roman architecture, offering a glimpse into ancient Rome's history and public spectacles.",
+    "openingHours": "Mon-Sun: 8:30 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Colosseum+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Colosseum+Rome"
+  },
+  {
+    "name": "Vatican Museums",
+    "description": "World-famous museums, home to art collections, including the Sistine Chapel.",
+    "details": "The Vatican Museums boast thousands of years of art, featuring works by Michelangelo, Raphael, and many others.",
+    "openingHours": "Mon-Sat: 9:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Vatican+Museums+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vatican+Museums+Rome"
+  },
+  {
+    "name": "Pantheon",
+    "description": "Ancient Roman temple known for its impressive dome and oculus.",
+    "details": "The Pantheon, a masterpiece of Roman engineering, is one of the best-preserved ancient Roman buildings, now functioning as a church.",
+    "openingHours": "Mon-Sun: 9:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Pantheon+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Rome"
+  },
+  {
+    "name": "Trevi Fountain",
+    "description": "Baroque fountain where visitors toss coins to ensure their return to Rome.",
+    "details": "The Trevi Fountain is the largest Baroque fountain in Rome, featuring sculptures of Neptune and other mythological figures.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Trevi+Fountain+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome"
+  },
+  {
+    "name": "St. Peter's Basilica",
+    "description": "Renowned church located within Vatican City, famous for its architecture and Michelangelo's Pietà.",
+    "details": "St. Peter's Basilica is the largest church in the world, known for its stunning dome and as a center of Christian worship.",
+    "openingHours": "Mon-Sun: 7:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=St.+Peter's+Basilica+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Peter's+Basilica+Rome"
+  },
+  {
+    "name": "Roman Forum",
+    "description": "Ancient marketplace and center of Roman political and social life.",
+    "details": "The Roman Forum is a sprawling ruin of temples, arches, and squares, once the center of ancient Rome's public life.",
+    "openingHours": "Mon-Sun: 8:30 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Roman+Forum+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Roman+Forum+Rome"
+  },
+  {
+    "name": "Piazza Navona",
+    "description": "Baroque square with fountains, restaurants, and artists showcasing their work.",
+    "details": "Piazza Navona is one of Rome's most famous squares, home to Bernini's Fountain of the Four Rivers.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Piazza+Navona+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+Navona+Rome"
+  },
+  {
+    "name": "Castel Sant'Angelo",
+    "description": "Castle-turned-museum with views of the city and the Tiber River.",
+    "details": "Originally a mausoleum for Emperor Hadrian, Castel Sant'Angelo is now a museum offering panoramic views of Rome.",
+    "openingHours": "Mon-Sun: 9:00 - 19:30",
+    "imageUrl": "https://www.google.com/search?q=Castel+Sant'Angelo+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Castel+Sant'Angelo+Rome"
+  },
+  {
+    "name": "Borghese Gallery",
+    "description": "Art gallery housing works by Bernini, Caravaggio, and other Renaissance masters.",
+    "details": "The Borghese Gallery is one of Rome’s premier art museums, showcasing an extensive collection of Baroque and Renaissance art.",
+    "openingHours": "Mon-Sun: 9:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Borghese+Gallery+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Borghese+Gallery+Rome"
+  },
+  {
+    "name": "Spanish Steps",
+    "description": "Famous staircase linking Piazza di Spagna with Trinità dei Monti church.",
+    "details": "The Spanish Steps are a popular landmark in Rome, leading up to the Trinità dei Monti church, with stunning views of the city.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Spanish+Steps+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome"
+  },
+  {
+    "name": "Campo de' Fiori",
+    "description": "Vibrant market square with vendors selling fresh produce, flowers, and local goods.",
+    "details": "Campo de' Fiori is one of Rome’s liveliest squares, especially in the morning when the market is in full swing.",
+    "openingHours": "Mon-Sat: 7:00 - 14:00",
+    "imageUrl": "https://www.google.com/search?q=Campo+de+Fiori+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Campo+de+Fiori+Rome"
+  },
+  {
+    "name": "Villa Borghese Gardens",
+    "description": "Large public park offering peaceful walks, museums, and boat rentals.",
+    "details": "Villa Borghese is Rome's central park, with gardens, lakes, museums, and the Borghese Gallery.",
+    "openingHours": "Mon-Sun: 7:00 - 19:00",
+    "imageUrl": "https://www.google.com/search?q=Villa+Borghese+Gardens+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Gardens+Rome"
+  },
+  {
+    "name": "Trastevere",
+    "description": "Charming neighborhood known for narrow streets, medieval churches, and vibrant nightlife.",
+    "details": "Trastevere is one of Rome's most picturesque neighborhoods, filled with quaint squares, cobblestone streets, and lively cafes.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Trastevere+Rome&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trastevere+Rome"
+  }
+  ],
+  "paris": [
     {
-      "name": "Charles Bridge",
-      "description": "Iconic historic bridge lined with statues, offering views of Prague Castle.",
-      "details": "A pedestrian-only bridge from the 14th century featuring 30 baroque-style statues and connecting the Old Town with Prague Castle.",
-      "openingHours": "Open 24 hours",
-      "imageUrl": "https://www.google.com/search?q=Charles+Bridge+Prague&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague"
-      
-    },
-    {
-      "name": "Prague Castle",
-      "description": "Largest ancient castle complex in the world, with cathedral, museums and gardens.",
-      "details": "Dating back to the 9th century, Prague Castle is a UNESCO World Heritage Site and home to the Czech president.",
-      "openingHours": "Mon-Sun: 6:00 - 22:00",
-      "imageUrl": "https://www.google.com/search?q=Prague+Castle&tbm=isch",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Castle"
-      
-    }
+    "name": "Eiffel Tower",
+    "description": "Iconic Parisian landmark offering breathtaking views of the city.",
+    "details": "The Eiffel Tower is one of the most recognizable structures in the world, providing panoramic views of Paris from its observation decks.",
+    "openingHours": "Mon-Sun: 9:00 - 23:00",
+    "imageUrl": "https://www.google.com/search?q=Eiffel+Tower+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eiffel+Tower+Paris"
+  },
+  {
+    "name": "Louvre Museum",
+    "description": "World-famous art museum, home to the Mona Lisa and countless other masterpieces.",
+    "details": "The Louvre is the largest art museum in the world, housing works spanning thousands of years of history and culture.",
+    "openingHours": "Mon-Sun: 9:00 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Louvre+Museum+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Louvre+Museum+Paris"
+  },
+  {
+    "name": "Notre-Dame Cathedral",
+    "description": "Gothic cathedral known for its stunning architecture and historical significance.",
+    "details": "Notre-Dame is one of the finest examples of French Gothic architecture, with its impressive stained glass windows and iconic towers.",
+    "openingHours": "Mon-Sun: 8:00 - 18:45",
+    "imageUrl": "https://www.google.com/search?q=Notre-Dame+Cathedral+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Notre-Dame+Cathedral+Paris"
+  },
+  {
+    "name": "Montmartre",
+    "description": "Historic neighborhood famous for its bohemian atmosphere and the Sacré-Cœur Basilica.",
+    "details": "Montmartre is a picturesque hilltop area of Paris with narrow streets, art studios, and spectacular views of the city.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Montmartre+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montmartre+Paris"
+  },
+  {
+    "name": "Versailles Palace",
+    "description": "Extravagant royal palace with magnificent gardens, the residence of French kings.",
+    "details": "Versailles is a UNESCO World Heritage Site, known for its opulent palace, stunning gardens, and the Hall of Mirrors.",
+    "openingHours": "Mon-Sun: 9:00 - 18:30",
+    "imageUrl": "https://www.google.com/search?q=Versailles+Palace+France&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Versailles+Palace+France"
+  },
+  {
+    "name": "Arc de Triomphe",
+    "description": "Triumphal arch honoring those who fought and died during the French Revolution and Napoleonic Wars.",
+    "details": "The Arc de Triomphe stands at the top of the Champs-Élysées, providing a great view of the city from its rooftop.",
+    "openingHours": "Mon-Sun: 10:00 - 22:30",
+    "imageUrl": "https://www.google.com/search?q=Arc+de+Triomphe+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris"
+  },
+  {
+    "name": "Seine River Cruises",
+    "description": "Relaxing boat tours along the Seine, offering stunning views of Paris landmarks.",
+    "details": "A Seine River Cruise is one of the best ways to see the city’s landmarks, including the Eiffel Tower, Notre-Dame, and the Louvre.",
+    "openingHours": "Mon-Sun: 10:00 - 22:00",
+    "imageUrl": "https://www.google.com/search?q=Seine+River+Cruise+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seine+River+Cruise+Paris"
+  },
+  {
+    "name": "Pantheon Paris",
+    "description": "Historical monument and mausoleum housing the tombs of French luminaries.",
+    "details": "The Pantheon is a grand building that commemorates the great minds of France, including Voltaire and Rousseau.",
+    "openingHours": "Mon-Sun: 10:00 - 18:30",
+    "imageUrl": "https://www.google.com/search?q=Pantheon+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Paris"
+  },
+  {
+    "name": "Champs-Élysées",
+    "description": "Famous avenue in Paris lined with shops, theaters, and cafés.",
+    "details": "The Champs-Élysées is known for its luxury boutiques, cultural venues, and its iconic view of the Arc de Triomphe.",
+    "openingHours": "Open 24 hours",
+    "imageUrl": "https://www.google.com/search?q=Champs-Élysées+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Champs-Élysées+Paris"
+  },
+  {
+    "name": "Luxembourg Gardens",
+    "description": "Elegant public gardens with fountains, sculptures, and the French Senate.",
+    "details": "The Luxembourg Gardens are a serene escape in Paris, offering picturesque landscapes, ponds, and stunning flowerbeds.",
+    "openingHours": "Mon-Sun: 7:30 - 19:30",
+    "imageUrl": "https://www.google.com/search?q=Luxembourg+Gardens+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luxembourg+Gardens+Paris"
+  },
+  {
+    "name": "Musée d'Orsay",
+    "description": "Museum housed in a former railway station, showcasing Impressionist and Post-Impressionist masterpieces.",
+    "details": "The Musée d'Orsay is home to works by Monet, Degas, and Van Gogh, offering a fantastic view of Paris from its clock tower.",
+    "openingHours": "Mon-Sun: 9:30 - 18:00",
+    "imageUrl": "https://www.google.com/search?q=Musée+d'Orsay+Paris&tbm=isch",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Musée+d'Orsay+Paris"
+  }
   ]
 }

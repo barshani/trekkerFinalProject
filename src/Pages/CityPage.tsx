@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import DayPickerModal from '../components/DayPickerModal';
 import CityCard from '../components/CityCard';
 import cities from '../Data/Cities.json'
+import { setCity } from '../auth/TokenManager';
 function CityPage() {
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const handleCardClick = (city: string) => {
     setSelectedCity(city);
+    setCity(city)
   };
 
   return (
@@ -17,7 +19,7 @@ function CityPage() {
             <CityCard
               title={city.name}
               description={city.description}
-              imageUrl={city.imageUrl}
+              flagUrl={city.flagUrl}
               onClick={() => handleCardClick(city.name)}
             />
           </div>

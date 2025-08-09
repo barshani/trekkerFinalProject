@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
+import { removeCity, removeDays, removeTripPlan } from '../auth/TokenManager';
 
 function PlanPage() {
   const { city, days } = useParams<{ city: string; days: string }>();
@@ -26,6 +28,21 @@ const [plan, setPlan] = useState<string[][]>(
   return (
     <div className="container my-5">
       <h2 className="text-center mb-4">Your Trip to {city}</h2>
+      <div className="d-flex justify-content-end">
+  <Button
+    variant="info"
+    className="w-25"
+    onClick={() => {
+      removeCity();
+      removeDays();
+      removeTripPlan();
+      navigate(-1);
+    }}
+  >
+    Other City
+  </Button>
+</div>
+
       <div className="row">
         {Array.from({ length: numDays }).map((_, dayIndex) => (
           <div className="col-md-4 mb-4" key={dayIndex}>
@@ -43,7 +60,7 @@ const [plan, setPlan] = useState<string[][]>(
                   className="btn btn-outline-primary"
                   onClick={() => handleAddAttraction(dayIndex)}
                 >
-                  + Add Attraction
+                  Edit Day
                 </button>
               </div>
             </div>

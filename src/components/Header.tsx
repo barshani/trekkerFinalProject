@@ -1,4 +1,6 @@
 import React from "react";
+import { verifyToken } from "../auth/TokenManager";
+import Logout from "../auth/Logout";
 
 function Header(){
   return (
@@ -21,15 +23,16 @@ function Header(){
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Trips</a>
-              </li>
-              <li className="nav-item">
+              {verifyToken()&&<li className="nav-item">
                 <a className="nav-link" href="#">About</a>
-              </li>
-              <li className="nav-item">
+              </li>}
+              {verifyToken()&&<li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
-              </li>
+              </li>}
+              {!verifyToken()&&<li className="nav-item">
+                <a className="nav-link" href="/login">login</a>
+              </li>}
+              {verifyToken()&&<Logout/>}
             </ul>
           </div>
         </div>

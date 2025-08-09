@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { setNumDays } from '../auth/TokenManager';
 
 interface Props {
   city: string;
@@ -11,6 +12,7 @@ function DayPickerModal({ city, onClose }: Props) {
   const navigate = useNavigate();
   
   const handleConfirm = () => {
+    setNumDays(String(days))
     navigate(`/plan/${city.toLowerCase()}/${days}`);
   };
 

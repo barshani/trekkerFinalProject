@@ -10,6 +10,7 @@ interface AttractionCardProps {
   details?: string;
   openingHours?: string;
   onAdd: Function;
+  onRemove: Function;
 }
 function isAttractionInDay(name: string, day: number): boolean {
   const stored = localStorage.getItem("tripPlan");
@@ -24,7 +25,7 @@ function isAttractionInDay(name: string, day: number): boolean {
     return false;
   }
 }
-function AttractionCard({ name, description, imageUrl,details, mapUrl,openingHours,onAdd }: AttractionCardProps) {
+function AttractionCard({ name, description, imageUrl,details, mapUrl,openingHours,onAdd,onRemove}: AttractionCardProps) {
   const [showModal, setShowModal] = useState(false);
   const [added, setAdded] = useState(false);
   const [showToast, setShowToast] = useState(false);
@@ -43,18 +44,22 @@ function AttractionCard({ name, description, imageUrl,details, mapUrl,openingHou
       <Button variant="info" onClick={() => setShowModal(true)}>
         View Attraction
       </Button>
-      <Button
+      {!isAttractionInDay(name,Number(day))&&<Button
         variant="success"
-        disabled={isAttractionInDay(name,Number(day))}
         onClick={() => {
           onAdd(name, day);        
-          setAdded(true);          
-          setShowToast(true);      
-          setTimeout(() => setShowToast(false), 2000); 
+          setAdded(true);           
         }}
-      >
-        {isAttractionInDay(name,Number(day)) ? "Added" : "Add"}
-      </Button>
+      >ADD
+      </Button>}
+      {isAttractionInDay(name,Number(day))&&<Button
+        variant="danger"
+        onClick={() => {
+          onRemove(name, day);        
+          setAdded(false);          
+        }}
+      >DELETE
+      </Button>}
     </div>
     <AttractionModal
         show={showModal}
