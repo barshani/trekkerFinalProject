@@ -5,6 +5,7 @@ import attractionsData from '../Data/Attractions.json';
 import { Modal, Button } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import { setTripPlan, getTripPlan, updateTripPlan, removeCity, removeDays, removeTripPlan } from '../auth/TokenManager'; // Import utility functions
+import jsPDF from 'jspdf';
 
 export interface Attraction {
   _id?:string;
@@ -25,7 +26,6 @@ function AttractionPage() {
   const [todayPlan, setTodayPlan] = useState<string[]>([]);
   const { day } = useParams<{ day: string }>();
   const navigate = useNavigate();
-
   // Load the trip plan for the given day
   const loadTodayPlan = (day: number) => {
     const plan = getTripPlan();
