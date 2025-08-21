@@ -10,6 +10,8 @@ import PlanPage from './Pages/PlanPage';
 import RouteGuard from './auth/RouteGuard';
 import Login from './auth/Login';
 import SignUp from './auth/SignUp';
+import AddAttractionPage from './Pages/AddAttractionPage';
+import AttractionView from './Pages/AttractionView';
 function App() {
   return (
     <>
@@ -33,6 +35,16 @@ function App() {
             <Route path="/attractionPage/:cityname/:day" element={
               <RouteGuard>
               <AttractionPage/>
+              </RouteGuard>
+              } />
+            <Route path="/addAttraction" element={
+              <RouteGuard>
+                <AddAttractionPage />
+              </RouteGuard>
+              } />
+            <Route path="/attractionView" element={
+              <RouteGuard>
+                <AttractionView />
               </RouteGuard>
               } />
           </Routes>

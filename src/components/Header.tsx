@@ -27,7 +27,7 @@ function Header(){
                 <a className="nav-link" href="#">About</a>
               </li>}
               {verifyToken()&&<li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link" href="/addAttraction">Add Attraction</a>
               </li>}
               {!verifyToken()&&<li className="nav-item">
                 <a className="nav-link" href="/login">login</a>

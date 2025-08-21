@@ -1,12 +1,13 @@
 {
   "madrid": [
-     {
+  {
     "name": "Parque del Retiro",
     "description": "One of Madrid’s largest parks featuring gardens, boating lake and the iconic Crystal Palace.",
     "details": "Located in the heart of Madrid, Retiro Park offers over 125 hectares of peace and culture, featuring fountains, statues, exhibitions and a rowing lake.",
     "openingHours": "Daily: 6:00 - 22:00",
     "imageUrl": "https://www.google.com/search?q=Parque+del+Retiro+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parque+del+Retiro+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Museo del Prado",
@@ -14,7 +15,8 @@
     "details": "The Prado Museum contains one of the finest collections of European art, dating from the 12th century to the early 20th century.",
     "openingHours": "Mon-Sat: 10:00 - 20:00, Sun: 10:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Museo+del+Prado+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+del+Prado+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+del+Prado+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Plaza Mayor",
@@ -22,7 +24,8 @@
     "details": "A central plaza in Madrid, the Plaza Mayor is known for its symmetrical architecture and vibrant atmosphere.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Plaza+Mayor+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Royal Palace of Madrid",
@@ -30,7 +33,8 @@
     "details": "The Royal Palace is the largest palace in Western Europe, showcasing a variety of historical artifacts, paintings, and tapestries.",
     "openingHours": "Mon-Sun: 10:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Royal+Palace+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Royal+Palace+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Royal+Palace+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Puerta del Sol",
@@ -38,7 +42,8 @@
     "details": "Puerta del Sol is a bustling center of commerce, with historic landmarks and a major transport hub.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Puerta+del+Sol+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Puerta+del+Sol+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Puerta+del+Sol+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Templo de Debod",
@@ -46,7 +51,8 @@
     "details": "The Templo de Debod is an authentic Egyptian temple dating back to the 2nd century BC, offering visitors a glimpse into Egypt's rich history.",
     "openingHours": "Mon-Sun: 9:45 - 20:00",
     "imageUrl": "https://www.google.com/search?q=Templo+de+Debod+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Templo+de+Debod+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Templo+de+Debod+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Plaza de Cibeles",
@@ -54,7 +60,8 @@
     "details": "Plaza de Cibeles is one of Madrid's most recognizable landmarks, home to the Cibeles Fountain, a symbol of the city.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Plaza+de+Cibeles+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+de+Cibeles+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Plaza+de+Cibeles+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Museo Nacional Centro de Arte Reina Sofía",
@@ -62,7 +69,8 @@
     "details": "The Reina Sofía Museum is one of Spain's top cultural institutions, housing major works of modern art and temporary exhibitions.",
     "openingHours": "Mon-Sat: 10:00 - 21:00, Sun: 10:00 - 14:30",
     "imageUrl": "https://www.google.com/search?q=Museo+Reina+Sofia+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Reina+Sofia+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Reina+Sofia+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "El Rastro",
@@ -70,7 +78,8 @@
     "details": "Every Sunday, El Rastro offers a vibrant marketplace where visitors can find antiques, clothing, and street food.",
     "openingHours": "Sun: 9:00 - 15:00",
     "imageUrl": "https://www.google.com/search?q=El+Rastro+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Rastro+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=El+Rastro+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Museo Thyssen-Bornemisza",
@@ -78,7 +87,8 @@
     "details": "Located near the Prado Museum, the Thyssen-Bornemisza offers an extensive collection of over 1,000 works from various periods of art history.",
     "openingHours": "Mon-Sun: 10:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Museo+Thyssen+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Thyssen+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Museo+Thyssen+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Santiago Bernabéu Stadium",
@@ -86,7 +96,8 @@
     "details": "Santiago Bernabéu is a must-visit for football fans, featuring a museum and access to the stands and locker rooms.",
     "openingHours": "Mon-Sun: 10:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Santiago+Bernabeu+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santiago+Bernabeu+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santiago+Bernabeu+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Madrid Rio",
@@ -94,7 +105,8 @@
     "details": "Madrid Rio is a perfect spot for outdoor activities, including walking, cycling, and enjoying nature.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Madrid+Rio+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid+Rio+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid+Rio+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Casa de Campo",
@@ -102,7 +114,8 @@
     "details": "Casa de Campo offers ample green space, a large lake for boating, and attractions like the Madrid Amusement Park and Zoo.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Casa+de+Campo+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+de+Campo+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+de+Campo+Madrid",
+    "city": "Madrid"
   },
   {
     "name": "Gran Vía",
@@ -110,9 +123,10 @@
     "details": "Gran Vía is a bustling thoroughfare with a variety of shops, restaurants, and entertainment venues.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Gran+Via+Madrid&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gran+Via+Madrid"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gran+Via+Madrid",
+    "city": "Madrid"
   }
-  ],
+],
   "barcelona": [
      {
     "name": "Sagrada Família",
@@ -120,7 +134,8 @@
     "details": "An iconic symbol of Barcelona, the basilica is renowned for its elaborate facades and unique design blending Gothic and Art Nouveau forms.",
     "openingHours": "Mon-Sun: 9:00 - 20:00",
     "imageUrl": "https://www.google.com/search?q=Sagrada+Familia+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Park Güell",
@@ -128,7 +143,8 @@
     "details": "A UNESCO World Heritage Site filled with serpentine benches, colorful tile work, and architectural surprises across its scenic gardens.",
     "openingHours": "Daily: 9:30 - 19:30",
     "imageUrl": "https://www.google.com/search?q=Park+Guell+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+Guell+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+Guell+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "La Rambla",
@@ -136,7 +152,8 @@
     "details": "La Rambla is a bustling promenade that stretches from Plaça de Catalunya to the Christopher Columbus monument, full of life and color.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=La+Rambla+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Rambla+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Rambla+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Casa Batlló",
@@ -144,7 +161,8 @@
     "details": "Casa Batlló is a UNESCO World Heritage Site, offering a surreal and imaginative interior that reflects Gaudí's unique vision.",
     "openingHours": "Mon-Sun: 9:00 - 21:00",
     "imageUrl": "https://www.google.com/search?q=Casa+Batlló+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+Batlló+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Casa+Batlló+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "La Pedrera (Casa Milà)",
@@ -152,7 +170,8 @@
     "details": "La Pedrera offers an insight into Gaudí’s organic style and features an impressive rooftop with chimneys that resemble sculptures.",
     "openingHours": "Mon-Sun: 9:00 - 20:30",
     "imageUrl": "https://www.google.com/search?q=La+Pedrera+Casa+Milà+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Pedrera+Casa+Milà+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=La+Pedrera+Casa+Milà+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Barceloneta Beach",
@@ -168,7 +187,8 @@
     "details": "Montjuïc Hill offers a variety of attractions, including the Montjuïc Castle, the Magic Fountain, and several gardens and museums.",
     "openingHours": "Mon-Sun: 10:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Montjuïc+Hill+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montjuïc+Hill+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montjuïc+Hill+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Magic Fountain of Montjuïc",
@@ -176,7 +196,8 @@
     "details": "Located at the foot of Montjuïc Hill, the Magic Fountain is a popular attraction where you can experience a colorful light display synchronized to music.",
     "openingHours": "Fri-Sun: 21:00 - 23:00",
     "imageUrl": "https://www.google.com/search?q=Magic+Fountain+Montjuïc+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Magic+Fountain+Montjuïc+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Magic+Fountain+Montjuïc+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Palau de la Música Catalana",
@@ -184,7 +205,8 @@
     "details": "The Palau de la Música Catalana is known for its stunning stained glass, intricate mosaics, and exceptional acoustics.",
     "openingHours": "Mon-Sun: 10:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Palau+de+la+Música+Catalana+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+de+la+Música+Catalana+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+de+la+Música+Catalana+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Camp Nou",
@@ -192,7 +214,8 @@
     "details": "Camp Nou is one of the largest football stadiums in the world, offering fans a chance to explore the museum and the stadium itself.",
     "openingHours": "Mon-Sun: 10:00 - 18:30",
     "imageUrl": "https://www.google.com/search?q=Camp+Nou+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Camp+Nou+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Camp+Nou+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Park de la Ciutadella",
@@ -200,7 +223,8 @@
     "details": "Located near the city center, the park is perfect for a peaceful stroll, a boat ride on the lake, or visiting the Barcelona Zoo and the Catalan Parliament.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Park+de+la+Ciutadella+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+de+la+Ciutadella+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park+de+la+Ciutadella+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Tibidabo",
@@ -208,7 +232,8 @@
     "details": "Tibidabo offers thrilling rides, an old-fashioned amusement park, and a church with sweeping views of the city and coastline.",
     "openingHours": "Mon-Sun: 11:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Tibidabo+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tibidabo+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tibidabo+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Palau Güell",
@@ -216,7 +241,8 @@
     "details": "Palau Güell is a magnificent example of Gaudí’s work, blending Art Nouveau with functional design and rich decoration.",
     "openingHours": "Mon-Sun: 10:00 - 20:00",
     "imageUrl": "https://www.google.com/search?q=Palau+Güell+Barcelona&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+Güell+Barcelona"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palau+Güell+Barcelona",
+    "city":"barcelona"
   },
   {
     "name": "Barcelona Cathedral",
@@ -224,7 +250,8 @@
     "details": "The Cathedral of Barcelona, also known as the Cathedral of the Holy Cross, is one of the best examples of Gothic architecture in the city.",
     "openingHours": "Mon-Sat: 8:00 - 19:30, Sun: 8:00 - 13:45",
     "imageUrl": "https://www.google.com/search?q=Barcelona+Cathedral&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona+Cathedral"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona+Cathedral",
+    "city":"barcelona"
   }
   ],
   "prague": [
@@ -234,7 +261,8 @@
     "details": "A pedestrian-only bridge from the 14th century featuring 30 baroque-style statues and connecting the Old Town with Prague Castle.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Charles+Bridge+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Charles+Bridge+Prague",
+    "city":"prague"
   },
   {
     "name": "Prague Castle",
@@ -242,7 +270,8 @@
     "details": "Dating back to the 9th century, Prague Castle is a UNESCO World Heritage Site and home to the Czech president.",
     "openingHours": "Mon-Sun: 6:00 - 22:00",
     "imageUrl": "https://www.google.com/search?q=Prague+Castle&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Castle"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Castle",
+    "city":"prague"
   },
   {
     "name": "Old Town Square",
@@ -250,7 +279,8 @@
     "details": "A UNESCO World Heritage Site, Old Town Square is surrounded by historic buildings, churches, and cafes, with the iconic Astronomical Clock located on the Town Hall.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Old+Town+Square+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Old+Town+Square+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Old+Town+Square+Prague",
+    "city":"prague"
   },
   {
     "name": "St. Vitus Cathedral",
@@ -258,7 +288,8 @@
     "details": "St. Vitus Cathedral is one of the most important landmarks in Prague, housing the tombs of Czech kings and a stunning collection of stained glass windows.",
     "openingHours": "Mon-Sun: 9:00 - 17:00",
     "imageUrl": "https://www.google.com/search?q=St.+Vitus+Cathedral+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Vitus+Cathedral+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Vitus+Cathedral+Prague",
+    "city":"prague"
   },
   {
     "name": "Wenceslas Square",
@@ -266,7 +297,8 @@
     "details": "Wenceslas Square is a historic and modern commercial hub in Prague, known for its shops, restaurants, and historic buildings, including the National Museum.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Wenceslas+Square+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wenceslas+Square+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wenceslas+Square+Prague",
+    "city":"prague"
   },
   {
     "name": "Prague Zoo",
@@ -274,7 +306,8 @@
     "details": "Prague Zoo is located in a scenic area with diverse animal exhibits, including rare species and special enclosures like the Indonesian jungle.",
     "openingHours": "Mon-Sun: 9:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Prague+Zoo&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Zoo"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Zoo",
+    "city":"prague"
   },
   {
     "name": "Petrin Hill",
@@ -282,7 +315,8 @@
     "details": "Petrin Hill offers a peaceful retreat from the city, with gardens, a mirror maze, and the Petrin Lookout Tower offering panoramic views.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Petrin+Hill+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Petrin+Hill+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Petrin+Hill+Prague",
+    "city":"prague"
   },
   {
     "name": "John Lennon Wall",
@@ -290,7 +324,8 @@
     "details": "The Lennon Wall is a famous site in Prague where messages of peace, love, and revolution are continually painted, reflecting the city's historical journey.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=John+Lennon+Wall+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=John+Lennon+Wall+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=John+Lennon+Wall+Prague",
+    "city":"prague"
   },
   {
     "name": "Vltava River",
@@ -298,7 +333,8 @@
     "details": "The Vltava River runs through Prague, providing a picturesque setting for boat tours, bridges, and iconic landmarks like Charles Bridge.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Vltava+River+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vltava+River+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vltava+River+Prague",
+    "city":"prague"
   },
   {
     "name": "Vyšehrad",
@@ -306,7 +342,8 @@
     "details": "Vyšehrad is a historic fort located above the Vltava River, offering visitors a quiet spot to enjoy gardens, explore the Basilica of St. Peter and Paul, and visit the Vyšehrad Cemetery.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Vyšehrad+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vyšehrad+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vyšehrad+Prague",
+    "city":"prague"
   },
   {
     "name": "Prague Dancing House",
@@ -314,7 +351,8 @@
     "details": "Known as the ‘Dancing House,’ this architectural marvel by Frank Gehry is one of Prague’s most iconic modern buildings.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Prague+Dancing+House&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Dancing+House"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Dancing+House",
+    "city":"prague"
   },
   {
     "name": "National Museum",
@@ -322,7 +360,8 @@
     "details": "The National Museum houses millions of objects across several disciplines, including geology, archaeology, and art, offering an insight into Czech and world history.",
     "openingHours": "Mon-Sun: 10:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=National+Museum+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=National+Museum+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=National+Museum+Prague",
+    "city":"prague"
   },
   {
     "name": "Letná Park",
@@ -330,7 +369,8 @@
     "details": "Letná Park is a popular destination for locals and tourists alike, offering walking paths, gardens, and a giant metronome where a statue of Stalin once stood.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Letná+Park+Prague&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Letná+Park+Prague"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Letná+Park+Prague",
+    "city":"prague"
   },
   {
     "name": "Prague Astronomical Clock",
@@ -338,7 +378,8 @@
     "details": "The Prague Astronomical Clock is one of the oldest astronomical clocks still operational today, attracting visitors every hour for its hourly show.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Prague+Astronomical+Clock&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Prague+Astronomical+Clock",
+    "city":"prague"
   }
   ],
   "rome": [
@@ -348,7 +389,8 @@
     "details": "The Colosseum is one of the greatest works of Roman architecture, offering a glimpse into ancient Rome's history and public spectacles.",
     "openingHours": "Mon-Sun: 8:30 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Colosseum+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Colosseum+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Colosseum+Rome",
+    "city":"rome"
   },
   {
     "name": "Vatican Museums",
@@ -356,7 +398,8 @@
     "details": "The Vatican Museums boast thousands of years of art, featuring works by Michelangelo, Raphael, and many others.",
     "openingHours": "Mon-Sat: 9:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Vatican+Museums+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vatican+Museums+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vatican+Museums+Rome",
+    "city":"rome"
   },
   {
     "name": "Pantheon",
@@ -364,7 +407,8 @@
     "details": "The Pantheon, a masterpiece of Roman engineering, is one of the best-preserved ancient Roman buildings, now functioning as a church.",
     "openingHours": "Mon-Sun: 9:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Pantheon+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Rome",
+    "city":"rome"
   },
   {
     "name": "Trevi Fountain",
@@ -372,7 +416,8 @@
     "details": "The Trevi Fountain is the largest Baroque fountain in Rome, featuring sculptures of Neptune and other mythological figures.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Trevi+Fountain+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trevi+Fountain+Rome",
+    "city":"rome"
   },
   {
     "name": "St. Peter's Basilica",
@@ -380,7 +425,8 @@
     "details": "St. Peter's Basilica is the largest church in the world, known for its stunning dome and as a center of Christian worship.",
     "openingHours": "Mon-Sun: 7:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=St.+Peter's+Basilica+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Peter's+Basilica+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.+Peter's+Basilica+Rome",
+    "city":"rome"
   },
   {
     "name": "Roman Forum",
@@ -388,7 +434,8 @@
     "details": "The Roman Forum is a sprawling ruin of temples, arches, and squares, once the center of ancient Rome's public life.",
     "openingHours": "Mon-Sun: 8:30 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Roman+Forum+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Roman+Forum+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Roman+Forum+Rome",
+    "city":"rome"
   },
   {
     "name": "Piazza Navona",
@@ -396,7 +443,8 @@
     "details": "Piazza Navona is one of Rome's most famous squares, home to Bernini's Fountain of the Four Rivers.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Piazza+Navona+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+Navona+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piazza+Navona+Rome",
+    "city":"rome"
   },
   {
     "name": "Castel Sant'Angelo",
@@ -404,7 +452,8 @@
     "details": "Originally a mausoleum for Emperor Hadrian, Castel Sant'Angelo is now a museum offering panoramic views of Rome.",
     "openingHours": "Mon-Sun: 9:00 - 19:30",
     "imageUrl": "https://www.google.com/search?q=Castel+Sant'Angelo+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Castel+Sant'Angelo+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Castel+Sant'Angelo+Rome",
+    "city":"rome"
   },
   {
     "name": "Borghese Gallery",
@@ -412,7 +461,8 @@
     "details": "The Borghese Gallery is one of Rome’s premier art museums, showcasing an extensive collection of Baroque and Renaissance art.",
     "openingHours": "Mon-Sun: 9:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Borghese+Gallery+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Borghese+Gallery+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Borghese+Gallery+Rome",
+    "city":"rome"
   },
   {
     "name": "Spanish Steps",
@@ -420,7 +470,8 @@
     "details": "The Spanish Steps are a popular landmark in Rome, leading up to the Trinità dei Monti church, with stunning views of the city.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Spanish+Steps+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spanish+Steps+Rome",
+    "city":"rome"
   },
   {
     "name": "Campo de' Fiori",
@@ -428,7 +479,8 @@
     "details": "Campo de' Fiori is one of Rome’s liveliest squares, especially in the morning when the market is in full swing.",
     "openingHours": "Mon-Sat: 7:00 - 14:00",
     "imageUrl": "https://www.google.com/search?q=Campo+de+Fiori+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Campo+de+Fiori+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Campo+de+Fiori+Rome",
+    "city":"rome"
   },
   {
     "name": "Villa Borghese Gardens",
@@ -436,7 +488,8 @@
     "details": "Villa Borghese is Rome's central park, with gardens, lakes, museums, and the Borghese Gallery.",
     "openingHours": "Mon-Sun: 7:00 - 19:00",
     "imageUrl": "https://www.google.com/search?q=Villa+Borghese+Gardens+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Gardens+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Villa+Borghese+Gardens+Rome",
+    "city":"rome"
   },
   {
     "name": "Trastevere",
@@ -444,7 +497,8 @@
     "details": "Trastevere is one of Rome's most picturesque neighborhoods, filled with quaint squares, cobblestone streets, and lively cafes.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Trastevere+Rome&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trastevere+Rome"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Trastevere+Rome",
+    "city":"rome"
   }
   ],
   "paris": [
@@ -454,7 +508,8 @@
     "details": "The Eiffel Tower is one of the most recognizable structures in the world, providing panoramic views of Paris from its observation decks.",
     "openingHours": "Mon-Sun: 9:00 - 23:00",
     "imageUrl": "https://www.google.com/search?q=Eiffel+Tower+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eiffel+Tower+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eiffel+Tower+Paris",
+    "city":"paris"
   },
   {
     "name": "Louvre Museum",
@@ -462,7 +517,8 @@
     "details": "The Louvre is the largest art museum in the world, housing works spanning thousands of years of history and culture.",
     "openingHours": "Mon-Sun: 9:00 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Louvre+Museum+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Louvre+Museum+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Louvre+Museum+Paris",
+    "city":"paris"
   },
   {
     "name": "Notre-Dame Cathedral",
@@ -470,7 +526,8 @@
     "details": "Notre-Dame is one of the finest examples of French Gothic architecture, with its impressive stained glass windows and iconic towers.",
     "openingHours": "Mon-Sun: 8:00 - 18:45",
     "imageUrl": "https://www.google.com/search?q=Notre-Dame+Cathedral+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Notre-Dame+Cathedral+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Notre-Dame+Cathedral+Paris",
+    "city":"paris"
   },
   {
     "name": "Montmartre",
@@ -478,7 +535,8 @@
     "details": "Montmartre is a picturesque hilltop area of Paris with narrow streets, art studios, and spectacular views of the city.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Montmartre+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montmartre+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Montmartre+Paris",
+    "city":"paris"
   },
   {
     "name": "Versailles Palace",
@@ -486,7 +544,8 @@
     "details": "Versailles is a UNESCO World Heritage Site, known for its opulent palace, stunning gardens, and the Hall of Mirrors.",
     "openingHours": "Mon-Sun: 9:00 - 18:30",
     "imageUrl": "https://www.google.com/search?q=Versailles+Palace+France&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Versailles+Palace+France"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Versailles+Palace+France",
+    "city":"paris"
   },
   {
     "name": "Arc de Triomphe",
@@ -494,7 +553,8 @@
     "details": "The Arc de Triomphe stands at the top of the Champs-Élysées, providing a great view of the city from its rooftop.",
     "openingHours": "Mon-Sun: 10:00 - 22:30",
     "imageUrl": "https://www.google.com/search?q=Arc+de+Triomphe+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris",
+    "city":"paris"
   },
   {
     "name": "Seine River Cruises",
@@ -502,7 +562,8 @@
     "details": "A Seine River Cruise is one of the best ways to see the city’s landmarks, including the Eiffel Tower, Notre-Dame, and the Louvre.",
     "openingHours": "Mon-Sun: 10:00 - 22:00",
     "imageUrl": "https://www.google.com/search?q=Seine+River+Cruise+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seine+River+Cruise+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Seine+River+Cruise+Paris",
+    "city":"paris"
   },
   {
     "name": "Pantheon Paris",
@@ -510,7 +571,8 @@
     "details": "The Pantheon is a grand building that commemorates the great minds of France, including Voltaire and Rousseau.",
     "openingHours": "Mon-Sun: 10:00 - 18:30",
     "imageUrl": "https://www.google.com/search?q=Pantheon+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pantheon+Paris",
+    "city":"paris"
   },
   {
     "name": "Champs-Élysées",
@@ -518,7 +580,8 @@
     "details": "The Champs-Élysées is known for its luxury boutiques, cultural venues, and its iconic view of the Arc de Triomphe.",
     "openingHours": "Open 24 hours",
     "imageUrl": "https://www.google.com/search?q=Champs-Élysées+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Champs-Élysées+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Champs-Élysées+Paris",
+    "city":"paris"
   },
   {
     "name": "Luxembourg Gardens",
@@ -526,7 +589,8 @@
     "details": "The Luxembourg Gardens are a serene escape in Paris, offering picturesque landscapes, ponds, and stunning flowerbeds.",
     "openingHours": "Mon-Sun: 7:30 - 19:30",
     "imageUrl": "https://www.google.com/search?q=Luxembourg+Gardens+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luxembourg+Gardens+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luxembourg+Gardens+Paris",
+    "city":"paris"
   },
   {
     "name": "Musée d'Orsay",
@@ -534,7 +598,8 @@
     "details": "The Musée d'Orsay is home to works by Monet, Degas, and Van Gogh, offering a fantastic view of Paris from its clock tower.",
     "openingHours": "Mon-Sun: 9:30 - 18:00",
     "imageUrl": "https://www.google.com/search?q=Musée+d'Orsay+Paris&tbm=isch",
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Musée+d'Orsay+Paris"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Musée+d'Orsay+Paris",
+    "city":"paris"
   }
   ]
 }

@@ -43,6 +43,9 @@ export function getDays(): string {
 export function removeDays() {
     localStorage.removeItem(dayKey);
 }
+export function verifyDays(): boolean {
+    return getDays().length > 0;
+}
 export function setCity(cityValue?: string) {
     if (!cityValue) return;
     localStorage.setItem(cityKey, cityValue);

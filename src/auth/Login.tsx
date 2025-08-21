@@ -17,6 +17,7 @@ function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [isAdmin , setIsAdmin] = useState(false);
     function validate(): boolean {
         if (!password) {
            setError('password is required');
@@ -43,6 +44,7 @@ function Login(){
             .then((user) => {
                 setUserID(user.id)
                 setToken(user.token)
+                setIsAdmin(true)
                 navigate('/');
             }).catch(()=>setError('invalid password or email'))
         setEmail('')

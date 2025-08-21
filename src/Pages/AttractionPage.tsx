@@ -6,11 +6,15 @@ import { Modal, Button } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import { setTripPlan, getTripPlan, updateTripPlan, removeCity, removeDays, removeTripPlan } from '../auth/TokenManager'; // Import utility functions
 
-interface Attraction {
+export interface Attraction {
+  _id?:string;
   name: string;
+  city: string;
   description: string;
   imageUrl: string;
   mapUrl: string;
+  details: string,
+  openingHours: string,
 }
 
 function AttractionPage() {
