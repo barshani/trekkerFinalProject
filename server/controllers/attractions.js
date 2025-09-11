@@ -1,5 +1,6 @@
 const joi = require('joi');
 const { Attraction } = require('../models/Attraction');
+const { appendFile } = require('fs');
 
 module.exports = {
     // Get all attractions
@@ -45,6 +46,7 @@ module.exports = {
                 mapUrl: joi.string().min(6).required(),
                 details: joi.string().min(6).required(),
                 openingHours: joi.string().min(9).required(),
+                aproved: joi.boolean().default(false),
             });
 
             const { error, value } = schema.validate(req.body);
@@ -71,6 +73,7 @@ module.exports = {
                 mapUrl: joi.string().min(6).required(),
                 details: joi.string().min(6).required(),
                 openingHours: joi.string().min(9).required(),
+                aproved: joi.boolean().default(false),
             });
 
             const { error, value } = schema.validate(req.body);

@@ -1,0 +1,79 @@
+/* src/components/DayPickerModal.css */
+
+/* A subtle fade-in for the modal backdrop */
+.day-picker-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050; /* Below the modal but above everything else */
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.day-picker-modal .modal-dialog {
+  max-width: 400px; /* Make the modal narrower than the default 500px */
+  width: 90%;
+}
+
+.day-picker-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.day-picker-modal .modal-header {
+  background-color: #2c3e50; /* Dark blue from theme */
+  color: #fff;
+  border-bottom: 3px solid #1abc9c; /* Teal accent */
+  border-top-left-radius: 14px; /* Match content radius */
+  border-top-right-radius: 14px;
+}
+
+.day-picker-modal .modal-header .modal-title {
+  font-weight: 600;
+}
+
+.day-picker-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%); /* Make close button white */
+}
+
+.day-picker-modal .modal-body {
+  padding: 2rem;
+}
+
+.day-picker-modal .modal-body .form-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.day-picker-modal .modal-body .form-control {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5rem;
+  height: auto;
+  border: 2px solid #dbe2e8;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.day-picker-modal .modal-body .form-control:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 4px rgba(26, 188, 156, 0.25);
+  outline: none;
+}
+
+.day-picker-modal .modal-footer {
+  border-top: 1px solid #e9ecef;
+  padding: 1rem;
+  gap: 0.75rem;
+}

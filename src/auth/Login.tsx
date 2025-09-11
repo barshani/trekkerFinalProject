@@ -1,8 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
-import { login, signup } from "../services/apiService";
-import { setAdmin, setToken, setUserID } from "./TokenManager";
+import { ToastContainer } from "react-toastify";
+import { login } from "../services/apiService";
+import { setToken, setUserID, setAdminRole } from "./TokenManager";
+import { AppContext } from "../App";
+import './Login.css';
 
 export interface loginUser {
     id?: string;
@@ -17,7 +19,7 @@ function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const [isAdmin , setIsAdmin] = useState(false);
+    const context = useContext(AppContext);
     function validate(): boolean {
         if (!password) {
            setError('password is required');
@@ -44,7 +46,14 @@ function Login(){
             .then((user) => {
                 setUserID(user.id)
                 setToken(user.token)
-                setIsAdmin(true)
+                const isAdmin = user.role === 'admin';
+                setAdminRole(isAdmin);
+                console.log(context);
+                if(context){
+                    context.setAdmin(isAdmin);
+                    context.setLoggedIn(true);
+                    context.setVerifyToken(true);
+                }
                 navigate('/');
             }).catch(()=>setError('invalid password or email'))
         setEmail('')
@@ -53,45 +62,47 @@ function Login(){
 return(
 <>
 <ToastContainer/>
-<div className="row w-75 mx-auto pb-5" style={{paddingTop:'15vh'}}>
-<div className="col-6"><img className="col-12 opacity-75" src="https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014616_1280.jpg" alt="trekker" /></div>
-<div className="col-6">
- <div className="w-75 mx-auto">
-            <div className="row mb-3">
-            <input
-                className="form-control me-3 mb-3"
-                type="text"
-                placeholder="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value.toLowerCase())}
-            />
-            <input
-                className="form-control me-3"
-                type="password"
-                placeholder="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
+<div className="login-page">
+    <div className="login-container">
+        <div className="login-image-container">
+            <img className="login-image" src="https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014616_1280.jpg" alt="Scenic view of Japan" />
+        </div>
+        <div className="login-form-container">
+            <div className="login-header">
+                <h2>Welcome Back!</h2>
+                <p>Sign in to continue to Trekker.</p>
             </div>
-            <div className="row">
-            <div className="row text-center text-danger">{error}</div>
-            <button
-                className={"btn btn-outline-success w-50"}
-                onClick={handleClick}
-            >
-            login
-            </button>
-            <button
-                className={"btn btn-outline-success w-50"}
-                onClick={()=>navigate('/signup')}
-            >
-            signup
-            </button>
+            <div>
+                <div className="error-message">{error}</div>
+                <div className="form-group">
+                    <input
+                        className="form-input"
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value.toLowerCase())}
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <input
+                        className="form-input"
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+                </div>
+                <button onClick={handleClick} className="btn btn-login">Login</button>
+            </div>
+            <div className="signup-link">
+                Don't have an account? <Link to="/signup">Sign Up</Link>
             </div>
         </div>
-        </div>
-        </div>
-        </>
+    </div>
+</div>
+</>
 )
 }
 export default Login;

@@ -5,6 +5,23 @@ const bcrypt = require('bcrypt');
 const config = require('../config/dev');
 
 module.exports = {
+    getMe: async function (req, res) {
+        try {
+            const user = await User.findById(req.user._id).select('-password');
+            if (!user) {
+                return res.status(404).json({ error: 'User not found' });
+            }
+            res.json({
+                id: user._id,
+                firstName: user.firstName,
+                userName: user.userName,
+                email: user.email,
+                role: user.role
+            });
+        } catch (err) {
+            res.status(400).json({ error: 'Error fetching user data' });
+        }
+    },
     login: async function (req, res, next) {
 
         const schema = joi.object({
@@ -26,14 +43,17 @@ module.exports = {
             const validPassword = await bcrypt.compare(value.password, user.password);
             if (!validPassword) throw 'Invalid password';
 
-            const param = { email: value.email };
+            const param = {
+                _id: user._id, 
+                email: user.email,
+                role: user.role
+            };
             const token = jwt.sign(param, config.jwt_token, { expiresIn: '72800s' });
-
             res.json({
                 token: token,
                 id: user._id,
                 email: user.email,
-                isAdmin: user.isAdmin,
+                role: user.role,
             });
         }
         catch (err) {
@@ -42,57 +62,59 @@ module.exports = {
         }
     },
 
-signup: async function (req, res, next) {
-    const schema = joi.object({
-        firstName: joi.string().required().min(2).max(256),
-        userName: joi.string().required().min(3).max(50),
-        email: joi.string().min(6).max(255).required().email(),
-        password: joi.string().min(6).max(1024).required(),
-    });
-
-    const { error, value } = schema.validate(req.body);
-
-    if (error) {
-        console.log(error.details[0].message);
-        return res.status(400).json({ error: 'Invalid signup data' });
-    }
-
-    try {
-        // לבדוק אם האימייל כבר קיים
-        const existingUser = await User.findOne({ email: value.email });
-        if (existingUser) {
-            return res.status(400).json({ error: "User already registered." });
-        }
-
-        // לבדוק אם שם המשתמש כבר קיים
-        const existingUsername = await User.findOne({ userName: value.userName });
-        if (existingUsername) {
-            return res.status(400).json({ error: "Username already taken." });
-        }
-
-        // הצפנת סיסמה
-        const hash = await bcrypt.hash(value.password, 10);
-
-        const newUser = new User({
-            firstName: value.firstName,
-            userName: value.userName,
-            email: value.email,
-            password: hash
+    signup: async function (req, res, next) {
+        const schema = joi.object({
+            firstName: joi.string().required().min(2).max(256),
+            userName: joi.string().required().min(3).max(50),
+            email: joi.string().min(6).max(255).required().email(),
+            password: joi.string().min(6).max(1024).required(),
+            role: joi.string().default('user')
         });
 
-        await newUser.save();
+        const { error, value } = schema.validate(req.body);
 
-        res.json({
-            id: newUser._id,
-            firstName: newUser.firstName,
-            userName: newUser.userName,
-            email: newUser.email
-        });
-    }
-    catch (err) {
-        console.log(err.message);
-        res.status(400).json({ error: 'Error signing up new user' });
-    }
-},
+        if (error) {
+            console.log(error.details[0].message);
+            return res.status(400).json({ error: 'Invalid signup data' });
+        }
+
+        try {
+            // לבדוק אם האימייל כבר קיים
+            const existingUser = await User.findOne({ email: value.email });
+            if (existingUser) {
+                return res.status(400).json({ error: "User already registered." });
+            }
+
+            // לבדוק אם שם המשתמש כבר קיים
+            const existingUsername = await User.findOne({ userName: value.userName });
+            if (existingUsername) {
+                return res.status(400).json({ error: "Username already taken." });
+            }
+
+            // הצפנת סיסמה
+            const hash = await bcrypt.hash(value.password, 10);
+            
+            const newUser = new User({
+                firstName: value.firstName,
+                userName: value.userName,
+                email: value.email,
+                password: hash,
+                role: value.role
+            });
+            
+            await newUser.save();
+            res.json({
+                id: newUser._id,
+                firstName: newUser.firstName,
+                userName: newUser.userName,
+                email: newUser.email,
+                role: newUser.role,
+            });
+        }
+        catch (err) {
+            console.log(err.message);
+            res.status(400).json({ error: 'Error signing up new user' });
+        }
+    },
 
 }

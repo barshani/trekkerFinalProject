@@ -1,7 +1,7 @@
 // src/pages/AttractionView.tsx
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { getAttractions, deleteAttraction } from "../services/apiService";
+import { getAttraction, getAttractions, deleteAttraction, updateAttraction } from "../services/apiService";
 import { Attraction } from "./AttractionPage";
 
 function AttractionView() {
@@ -16,7 +16,8 @@ function AttractionView() {
     const fetchAttractions = async () => {
         try {
             const data = await getAttractions();
-            setAttractions(data);
+            const pendingData = data.filter(attraction => !attraction.aproved);
+            setAttractions(pendingData);
         } catch (err) {
             console.error(err);
             setError('Failed to load attractions');
@@ -24,6 +25,30 @@ function AttractionView() {
             setLoading(false);
         }
     };
+    const handleApprove = async (id?: string) => {
+        if (!id) return;
+        try {
+            const attraction = await getAttraction(id);
+            const newAttraction: Attraction = {
+                name: attraction.name,
+                city: attraction.city,
+                description: attraction.description,
+                imageUrl: attraction.imageUrl,
+                mapUrl: attraction.mapUrl,
+                details: attraction.details,
+                openingHours: attraction.openingHours,
+                aproved: true,
+            };
+            attraction.aproved = true;
+            await updateAttraction(id,newAttraction);
+            toast.success('Attraction approved successfully');
+            setAttractions(prev => prev.filter(attr => attr._id !== id));
+        } catch (err) {
+            console.error(err);
+            toast.error('Failed to approve attraction');
+        }
+    };
+
 
     const handleDelete = async (id?: string) => {
         if (!id) return;
@@ -63,7 +88,13 @@ function AttractionView() {
                                     View on Map
                                 </a>
                             </div>
-                            <div className="card-footer text-end">
+                            <div className="card-footer text-start">
+                                <button
+                                    className="btn btn-outline-success btn-sm"
+                                    onClick={() => handleApprove(attraction._id)}
+                                >
+                                    Approve
+                                </button>
                                 <button
                                     className="btn btn-outline-danger btn-sm"
                                     onClick={() => handleDelete(attraction._id)}

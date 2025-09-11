@@ -1,0 +1,46 @@
+.attraction-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: none; /* Remove default bootstrap border */
+  border-radius: 12px; /* Softer, more modern corners */
+  overflow: hidden; /* Ensures image corners are also rounded */
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important; /* More pronounced shadow on hover */
+}
+
+.attraction-card .card-img-top {
+  height: 200px;
+  object-fit: cover; /* Prevents image stretching */
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.attraction-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.attraction-card .card-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.attraction-card .card-text {
+  flex-grow: 1; /* Pushes buttons to the bottom */
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Container for the buttons to align them nicely */
+.attraction-card .card-footer-buttons {
+  display: flex;
+  gap: 0.5rem; /* Space between buttons */
+  padding: 0 1.25rem 1.25rem; /* Match card-body padding */
+  background-color: #fff;
+  border-top: none;
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+}

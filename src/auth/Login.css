@@ -1,0 +1,117 @@
+/* src/auth/Login.css */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh; /* Adjust to fit screen without footer */
+  background-color: #f4f7f6;
+  padding: 2rem 1rem;
+}
+
+.login-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.login-image-container {
+  flex: 1;
+  display: none; /* Hidden on small screens for a mobile-first approach */
+}
+
+/* Show image on medium screens and up */
+@media (min-width: 768px) {
+  .login-image-container {
+    display: block;
+  }
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form-container {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-header h2 {
+  font-weight: 700;
+  color: #2c3e50; /* Match header color */
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #dbe2e8;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1abc9c; /* Match theme color */
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.2);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  min-height: 1.25rem; /* Reserve space to prevent layout shift */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  color: #fff;
+  padding: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+  transform: translateY(-2px);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #1abc9c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

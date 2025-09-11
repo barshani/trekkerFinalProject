@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const attractions = require('../controllers/attractions');
-
 // Get all attractions
 router.get('/', attractions.getAll);
 

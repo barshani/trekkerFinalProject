@@ -76,6 +76,7 @@ export function setUserID(idValue?: string) {
 export function getUserID(): string {
     return localStorage.getItem(idKey) || '';
 }
+
 export function removeID() {
     localStorage.removeItem(idKey);
 }
@@ -94,6 +95,9 @@ export function removeAdmin() {
 }
 export function isAdmin(): boolean {
     return getAdmin()==="yes";
+}
+export function setAdminRole(isAdmin: boolean): void {
+    localStorage.setItem('isAdmin', isAdmin ? 'yes' : 'no');
 }
 export function setMode(modeValue?: string) {
     if (!modeValue) return;

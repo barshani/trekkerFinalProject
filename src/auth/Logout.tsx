@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { removeAdmin, removeCity, removeDays, removeToken, removeTripPlan } from "./TokenManager";
 import { NavDropdown } from "react-bootstrap";
 function Logout() {
-    const navigate = useNavigate();
     
     function handleClick() {
         removeToken();
@@ -17,7 +16,7 @@ function Logout() {
             className="btn btn-link nav-link"
             onClick={handleClick}
         >
-            <NavDropdown.Item href="/login">Logout</NavDropdown.Item>
+            <NavDropdown.Item href="/login" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>Logout</NavDropdown.Item>
         </button>
     );
 }

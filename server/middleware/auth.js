@@ -2,25 +2,20 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/dev');
 
 module.exports = (req, res, next) => {
-    next();
-    return;
+    // קבל את הטוקן מהכותרת Authorization
+    const authHeader = req.headers['authorization'];
+    if (!authHeader) return res.status(401).json({ error: 'No token provided' });
 
-
-    if (req.path.includes('login') ||
-        req.path.includes('signup')) {
-        next();
-        return;
-    }
-
-    const token = req.header('x-auth-token');
-    if (!token) return res.status(401).send('Access denied. go to /signin');
+    // הפורמט הוא "Bearer <token>"
+    const token = authHeader.split(' ')[1];
+    if (!token) return res.status(401).json({ error: 'Token missing' });
 
     try {
-        req.token = jwt.verify(token, config.jwt_token);
+        const decoded = jwt.verify(token, config.jwt_token);
+        req.user = decoded;
         next();
-    }
-    catch (err) {
+    } catch (err) {
         console.log(err);
-        res.status(401).send('Access denied. go to /signin');
+        res.status(401).json({ error: 'Invalid token' });
     }
-}
+};

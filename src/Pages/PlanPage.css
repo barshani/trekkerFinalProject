@@ -1,0 +1,82 @@
+/* src/Pages/PlanPage.css */
+
+.plan-page-container {
+  background-color: #f4f7f6; /* Soft, clean background like other pages */
+  padding: 4rem 0;
+  min-height: 90vh;
+}
+
+.plan-page-header {
+  color: #2c3e50; /* Dark blue from theme */
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Top Action Buttons --- */
+.plan-actions .btn {
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.plan-actions .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* --- Day Card Redesign --- */
+.day-card {
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure cards in a row are same height */
+}
+
+.day-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(44, 62, 80, 0.15);
+}
+
+.day-card .card-header {
+  background-color: #1abc9c; /* Teal accent color */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: none;
+  padding: 1rem 1.25rem;
+}
+
+.day-card .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Make card body fill available space */
+}
+
+.day-card .attractions-list {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Make list take up space, pushing button down */
+}
+
+.day-card .attractions-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ecf0f1;
+  color: #34495e;
+}
+
+.day-card .attractions-list li:last-child {
+  border-bottom: none;
+}
+
+.day-card .edit-day-btn {
+  margin-top: auto; /* Push button to the bottom */
+}

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { verifyToken } from "../auth/TokenManager";
 import Logout from "../auth/Logout";
+import { getCurrentUser } from "../services/apiService";
+import { AppContext } from "../App";
+import './Header.css';
 
 function Header(){
+  const [userRole, setUserRole] = useState<string | null>(null);
+  const context = useContext(AppContext);
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-trekker">
         <div className="container">
           <a className="navbar-brand" href="#">Trekker</a>
           <button
@@ -23,16 +29,16 @@ function Header(){
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              {verifyToken()&&<li className="nav-item">
-                <a className="nav-link" href="#">About</a>
+              {context?.admin && context.verifyToken && <li className="nav-item">
+                <a className="nav-link" href="/attractionView">Attrection View</a>
               </li>}
-              {verifyToken()&&<li className="nav-item">
+              {context?.verifyToken && <li className="nav-item">
                 <a className="nav-link" href="/addAttraction">Add Attraction</a>
               </li>}
-              {!verifyToken()&&<li className="nav-item">
+              {!context?.verifyToken && <li className="nav-item">
                 <a className="nav-link" href="/login">login</a>
               </li>}
-              {verifyToken()&&<Logout/>}
+              {context?.verifyToken &&<Logout/>}
             </ul>
           </div>
         </div>
