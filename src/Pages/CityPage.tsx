@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import DayPickerModal from '../components/DayPickerModal';
+import React from 'react';
 import CityCard from '../components/CityCard';
 import cities from '../Data/Cities.json'
-import { setCity } from '../auth/TokenManager';
 import './CityPage.css';
-function CityPage() {
-  const [selectedCity, setSelectedCity] = useState<string | null>(null);
-  const handleCardClick = (city: string) => {
-    setSelectedCity(city);
-    setCity(city)
-  };
 
+function CityPage() {
   return (
     <div className="city-page">
       <div className="container">
@@ -24,19 +17,11 @@ function CityPage() {
               <CityCard
                 title={city.name}
                 flagUrl={city.flagUrl}
-                onClick={() => handleCardClick(city.name)}
               />
             </div>
           ))}
         </div>
       </div>
-
-      {selectedCity && (
-        <DayPickerModal
-          city={selectedCity}
-          onClose={() => setSelectedCity(null)}
-        />
-      )}
     </div>
   );
 }

@@ -12,12 +12,9 @@ function Logout() {
     }
 
     return (
-        <button
-            className="btn btn-link nav-link"
-            onClick={handleClick}
-        >
-            <NavDropdown.Item href="/login" style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>Logout</NavDropdown.Item>
-        </button>
+        <li className="nav-item">
+            <button className="nav-link" onClick={handleClick}>logout</button>
+        </li>
     );
 }
 

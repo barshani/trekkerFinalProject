@@ -18,7 +18,7 @@
 }
 
 .day-picker-modal .modal-dialog {
-  max-width: 400px; /* Make the modal narrower than the default 500px */
+  max-width: 400px; 
   width: 90%;
 }
 
@@ -29,10 +29,10 @@
 }
 
 .day-picker-modal .modal-header {
-  background-color: #2c3e50; /* Dark blue from theme */
+  background-color: #2c3e50; 
   color: #fff;
-  border-bottom: 3px solid #1abc9c; /* Teal accent */
-  border-top-left-radius: 14px; /* Match content radius */
+  border-bottom: 3px solid #1abc9c; 
+  border-top-left-radius: 14px; 
   border-top-right-radius: 14px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .day-picker-modal .btn-close {
-  filter: invert(1) grayscale(100%) brightness(200%); /* Make close button white */
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 .day-picker-modal .modal-body {

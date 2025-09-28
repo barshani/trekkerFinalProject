@@ -1,6 +1,6 @@
-/* A custom, modern theme for the navbar */
+
 .navbar.bg-trekker {
-  background-color: #2c3e50 !important; /* A deep, modern blue */
+  background-color: #2c3e50 !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -29,7 +29,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: #1abc9c !important; /* A bright, modern teal for hover and active states */
+  color: #1abc9c !important;
   transform: translateY(-2px);
   background-color: rgba(255, 255, 255, 0.05);
 }

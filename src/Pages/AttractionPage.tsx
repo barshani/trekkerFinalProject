@@ -4,7 +4,7 @@ import AttractionCard from '../components/AttractionCard';
 import attractionsData from '../Data/Attractions.json';
 import { Modal, Button } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
-import { setTripPlan, getTripPlan, updateTripPlan, removeCity, removeDays, removeTripPlan } from '../auth/TokenManager'; // Import utility functions
+import { setTripPlan, getTripPlan, updateTripPlan, removeCity, removeDays, removeTripPlan } from '../auth/TokenManager';
 import jsPDF from 'jspdf';
 import { getAttractions } from '../services/apiService';
 
@@ -30,7 +30,6 @@ function AttractionPage() {
   const [todayPlan, setTodayPlan] = useState<string[]>([]);
   const { day } = useParams<{ day: string }>();
   const navigate = useNavigate();
-  // Load the trip plan for the given day
   const loadTodayPlan = (day: number) => {
     const plan = getTripPlan();
     if (Array.isArray(plan) && plan[day]) {
@@ -41,17 +40,14 @@ function AttractionPage() {
   };
   useEffect(() => {
     const fetchAndCombineAttractions = async () => {
-      // 1. Get attractions from the local JSON file
       const localAttractions: Attraction[] = (attractionsData as Record<string, Attraction[]>)[cityKey] || [];
 
       try {
-        // 2. Fetch attractions from the API
         const apiAttractions = await getAttractions();
         const filteredApiAttractions = apiAttractions.filter(
           (attraction) => attraction.city.toLowerCase() === cityKey && attraction.aproved
         );
 
-        // 3. Combine local and API attractions, avoiding duplicates
         const combined = [...localAttractions];
         const existingNames = new Set(localAttractions.map((attr) => attr.name));
 
@@ -64,7 +60,7 @@ function AttractionPage() {
         setAllAttractions(combined);
       } catch (error) {
         console.error('Error fetching attractions:', error);
-        setAllAttractions(localAttractions); // Fallback to local data
+        setAllAttractions(localAttractions);
       }
     };
     fetchAndCombineAttractions();
@@ -74,7 +70,7 @@ function AttractionPage() {
     const filterAttraction =  attractions.filter(attraction => attraction.city.toLowerCase() === city.toLowerCase() && attraction.aproved);
     setNewAttractions(filterAttraction);
   }
-  // Add an attraction to the trip plan for a specific day
+
   function onAdd(name: string, day: number) {
     const plan = getTripPlan();
 
@@ -101,10 +97,9 @@ function AttractionPage() {
     });
   }
 
-  // Remove an attraction from the trip plan for a specific day
+
   function onRemove(name: string, day: number) {
     const plan = getTripPlan();
-    // Remove the attraction from the plan for the specific day
     const updatedPlan = plan[day].filter((item: string) => item !== name);
     plan[day] = updatedPlan;
 
@@ -162,6 +157,8 @@ function AttractionPage() {
                   description={item.description}
                   imageUrl={item.imageUrl}
                   mapUrl={item.mapUrl}
+                  details={item.details}
+                  openingHours={item.openingHours}
                   onAdd={onAdd}
                   onRemove={onRemove}
                 />

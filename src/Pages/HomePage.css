@@ -1,5 +1,5 @@
 .home-page .carousel-item {
-  height: 70vh; /* Adjust height as needed */
+  height: 70vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -11,7 +11,7 @@
 .home-page .carousel-image {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.7); /* Darken image to make text more readable */
+  filter: brightness(0.7); 
 }
 
 .home-page .carousel-caption {

@@ -10,7 +10,7 @@ function Header(){
   const context = useContext(AppContext);
   
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-trekker">
+    <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-trekker">
         <div className="container">
           <a className="navbar-brand" href="#">Trekker</a>
           <button

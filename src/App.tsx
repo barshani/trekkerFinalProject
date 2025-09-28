@@ -40,7 +40,7 @@ function App() {
     <>
     <BrowserRouter>
       <AppContext.Provider value={{ admin, setAdmin, loggedIn, setLoggedIn, verifyToken, setVerifyToken }}>
-        <div className="d-flex flex-column min-vh-100">
+        <div className="d-flex flex-column min-vh-100 mt-5">
           <Header />
           <main className="flex-grow-1">
             <Routes>

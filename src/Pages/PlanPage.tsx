@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
-import { removeCity, removeDays, removeTripPlan } from '../auth/TokenManager';
+import { removeCity, removeDays, removeTripPlan, setNumDays, getTripPlan, updateTripPlan } from '../auth/TokenManager';
 import jsPDF from 'jspdf';
 import './PlanPage.css';
 
@@ -9,10 +9,29 @@ function PlanPage() {
   const { city, days } = useParams<{ city: string; days: string }>();
   const navigate = useNavigate();
   const numDays = parseInt(days || '1');
-const [plan, setPlan] = useState<string[][]>(
-  Array.from({ length: numDays }, () => [])
-);  const handleAddAttraction = (dayIndex: number) => {
+  const [editableDays, setEditableDays] = useState(numDays);
+  const [plan, setPlan] = useState<string[][]>(
+    Array.from({ length: numDays }, () => [])
+  );
+  const handleAddAttraction = (dayIndex: number) => {
     navigate(`/attractionPage/${city}/${dayIndex}`);
+  };
+
+  const handleUpdateDays = () => {
+    if (editableDays === numDays || editableDays < 1) return;
+
+    setNumDays(String(editableDays));
+
+    const currentPlan = getTripPlan();
+    const currentLength = currentPlan.length;
+
+    if (editableDays > currentLength) {
+      currentPlan.push(...Array(editableDays - currentLength).fill([]));
+    } else {
+      currentPlan.length = editableDays;
+    }
+    updateTripPlan(currentPlan);
+    navigate(`/plan/${city}/${editableDays}`, { replace: true });
   };
   useEffect(() => {
   const stored = localStorage.getItem("tripPlan");
@@ -127,7 +146,7 @@ const [plan, setPlan] = useState<string[][]>(
     <div className="plan-page-container">
       <div className="container">
         <h2 className="plan-page-header text-center">Your Trip to {city}</h2>
-        <div className="d-flex justify-content-center gap-3 mb-5 plan-actions">
+        <div className="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-5 plan-actions">
           <Button
             variant="success"
             onClick={handleDownloadPDF}
@@ -146,6 +165,20 @@ const [plan, setPlan] = useState<string[][]>(
           >
             <i className="bi bi-arrow-left-circle me-2"></i>Plan Another Trip
           </Button>
+          <div className="input-group input-group-sm w-auto">
+            <span className="input-group-text" id="days-addon">Days</span>
+            <input
+              type="number"
+              className="form-control"
+              value={editableDays}
+              onChange={(e) => setEditableDays(Number(e.target.value))}
+              min="1"
+              max="30"
+              aria-describedby="days-addon"
+              style={{ width: '65px' }}
+            />
+            <Button variant="outline-secondary" onClick={handleUpdateDays} disabled={editableDays === numDays}>Update</Button>
+          </div>
         </div>
 
         <div className="row">
